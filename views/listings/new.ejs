@@ -1,0 +1,59 @@
+<% layout("./layouts/boilerplate")%>
+    <div class="row">
+        <div class="col-8 offset-2">
+
+<h3>Create a new Listing</h3>
+
+<form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+
+    <div>
+        <label for="title" class="form-label">Title</label>
+        <input id="title" name="listing[title]" placeholder="enter title" type="text" class="form-control" required>
+        <div class="valid-fedback">Title looks good!</div>   <!--this will only pop up if the title is correct -->
+    </div>
+
+    <br>
+
+    <div>
+        <label for="description" class="form-label">Description</label>
+        <input id="description" name="listing[description]" placeholder="enter description" type="text" class="form-control" required>
+    </div>
+
+    <br>
+      <div>
+        <label for="image" class="form-label">Upload image</label>
+        <input id="image" name="listing[image]" placeholder="enter image URL/Link" type="file" class="form-control">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="price" class="form-label">Price</label>
+        <input id="price" name="listing[price]" placeholder="enter price" type="number" class="form-control" required>
+          <div class="invalid-fedback">price should be valid</div>   <!--this will only pop up if the price is incorrect -->
+    </div>
+
+    <br>
+
+    <div>
+        <label for="country" class="form-label">Country</label>
+        <input id="country" name="listing[country]" placeholder="enter country" type="text" class="form-control" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="location" class="form-label">Location</label>
+        <input id="location" name="listing[location]" placeholder="enter location" type="text" class="form-control" required>
+    </div>
+
+    <br>
+
+    <button>Add</button>
+
+</form>
+
+</body>
+</html>
+</div>
+</div>

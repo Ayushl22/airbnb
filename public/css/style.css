@@ -1,0 +1,212 @@
+/* Navbar container */
+.navbar {
+    height: 5rem;
+    background-color: #ffffff;   /* White background */
+    padding: 0 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Brand icon */
+.fa-compass {
+    color: #ff385c;   /* Airbnb-like red */
+    font-size: 2rem;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: #222222;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #ff385c;
+    transform: translateY(-2px);
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+    color: #ff385c;
+    font-weight: 600;
+}
+
+/* Toggler button */
+.navbar-toggler {
+    border: none;
+}
+
+/* Remove blue outline on click */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Footer Container */
+footer {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    border-top: 1px solid #e5e5e5;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Social Icons */
+.f-info-socials {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.f-info-socials i {
+    font-size: 1.4rem;
+    color: #222222;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.f-info-socials i:hover {
+    color: #ff385c;   /* Same red as navbar */
+    transform: translateY(-3px);
+}
+
+/* Copyright Text */
+footer div {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Footer Links */
+.f-info-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.f-info-links a:hover {
+    color: #ff385c;
+}
+/* Remove default anchor styling */
+.listing-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optional hover animation */
+.listing-link:hover .card {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Form Container */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Form Heading */
+h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Each input group */
+form div {
+    margin-bottom: 1rem;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: #444;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 0.6rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+.form-control:focus {
+    border-color: #ff385c;
+    box-shadow: 0 0 0 0.2rem rgba(255, 56, 92, 0.25);
+}
+
+/* Submit Button */
+form button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #ff385c;
+    color: #fff;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover */
+form button:hover {
+    background-color: #e03150;
+    transform: translateY(-2px);
+}
+
+/* Button Active */
+form button:active {
+    transform: scale(0.98);
+}
+
+.show-img{
+    height:30vp ;
+}
+
+/* Show Page Card */
+.listing-show-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Show Image */
+.show-img {
+    height: 22rem;
+    object-fit: cover;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Card Text */
+.card-text {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Buttons spacing fix */
+.d-flex form {
+    margin: 0;
+}
+
